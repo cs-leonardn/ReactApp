@@ -1,0 +1,65 @@
+{
+  "id": "05191b9d-22e5-4a30-9147-1df6752db532",
+  "alias": "WebpartWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Webpart"
+      },
+      "description": {
+        "default": "Webpart description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "Webpart"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "webpart-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "webpart-web-part": {
+        "type": "path",
+        "path": "dist/webpart-web-part.js"
+      },
+      "WebpartWebPartStrings": {
+        "defaultPath": "lib/webparts/webpart/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.10.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      }
+    }
+  }
+}
