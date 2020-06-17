@@ -4,7 +4,7 @@ declare interface IWebpartWebPartStrings {
   DescriptionFieldLabel: string;
 }
 
-declare module 'WebpartWebPartStrings' {
+declare module "WebpartWebPartStrings" {
   const strings: IWebpartWebPartStrings;
   export = strings;
 }
